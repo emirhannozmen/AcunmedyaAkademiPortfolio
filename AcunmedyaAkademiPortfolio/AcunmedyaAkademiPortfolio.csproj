@@ -215,6 +215,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Images\AboutImages\AboutImage.jpg" />
+    <Content Include="Images\ProjectImages\contact.png" />
     <Content Include="Images\ProjectImages\portfolio.gif" />
     <Content Include="Images\HeroImages\2.jpg" />
     <Content Include="Images\HeroImages\3.png" />
@@ -226,7 +227,6 @@
     <Content Include="Images\PortfolioImages\VeriAnalizi.png" />
     <Content Include="Images\ProjectImages\diagrams.png" />
     <Content Include="Images\ProjectImages\about.png" />
-    <Content Include="Images\ProjectImages\contact.png" />
     <Content Include="Images\ProjectImages\portfolio.png" />
     <Content Include="Images\ProjectImages\service.png" />
     <Content Include="Images\ProjectImages\resume.png" />
