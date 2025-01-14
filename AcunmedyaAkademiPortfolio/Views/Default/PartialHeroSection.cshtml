@@ -1,0 +1,28 @@
+﻿@model List<AcunmedyaAkademiPortfolio.Models.TblSocialMedia>
+<section id="hero" class="hero section dark-background">
+
+    <img src="~/Images/HeroImages/3.png" alt="AnaSayfa">
+
+    <div class="container" data-aos="zoom-out">
+        <div class="row justify-content-center">
+
+            <div class="col-lg-9">
+
+                <h2>Emirhan Özmen</h2>
+                <p>
+                    Ben Kimim? : <span class="typed" data-typed-items="Web Geliştirme, Backend, ASP.NET Core, Mobil Geliştirme, DevOps"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
+                </p>
+
+                @foreach (var item in Model)
+                {
+                <div class="social-links" style="display: inline-block;">
+                    <a href="@item.Url"><i class="@item.Icon"></i></a>
+                </div>
+                }
+
+            </div>
+
+        </div>
+    </div>
+
+</section>

@@ -1,0 +1,87 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+@Html.Action("PartialHead", "Default")
+
+<body class="index-page">
+
+    @Html.Action("PartialSidebar", "Default")
+
+    <main class="main">
+
+        @Html.Action("PartialHeroSection", "Default")
+
+        @Html.Action("PartialAbout", "Default")
+
+        @Html.Action("PartialStatistics", "Default")
+
+        @Html.Action("PartialSkill", "Default")
+
+        <section id="resume" class="resume section dark-background">
+
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Özgeçmiş</h2>
+                <p>
+                    Eğitim geçmişim, deneyimlerim ve kariyerime dair detayları aşağıda bulabilirsiniz.
+                </p>
+            </div>
+
+            <div class="container">
+
+                <div class="row">
+
+                    @Html.Action("PartialEducation", "Default")
+
+                    @Html.Action("PartialExperience", "Default")
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="portfolio" class="portfolio section">
+
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Portfolyo</h2>
+                <p>Geliştirdiğim projelere aşağıda göz atabilirsiniz.</p>
+            </div>
+
+            <div class="container">
+
+                <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+                    @Html.Action("PartialFilters", "Default")
+
+                    <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+                        @Html.Action("PartialProjects", "Default")
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        @Html.Action("PartialServices", "Default")
+
+        @Html.Action("PartialTestimonials", "Default")
+
+        @Html.Action("PartialContacts", "Default")
+
+    </main>
+
+    @Html.Action("PartialFooter", "Default")
+
+    @Html.Action("PartialScripts", "Default")
+
+</body>
+
+</html>

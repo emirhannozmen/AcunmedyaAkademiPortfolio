@@ -1,0 +1,15 @@
+﻿@model List<AcunmedyaAkademiPortfolio.Models.TblEducation>
+
+<div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+    <br />
+    <h3 class="resume-title">Eğitim</h3>
+    @foreach (var item in Model)
+    {
+    <div class="resume-item">
+        <h4>@item.Title</h4>
+        <h5>@item.Period</h5>
+        <p><em>@item.SubTitle</em></p>
+        <p>@item.Description</p>
+    </div>
+    }
+</div>

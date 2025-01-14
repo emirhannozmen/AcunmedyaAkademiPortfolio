@@ -1,0 +1,47 @@
+﻿@model List<AcunmedyaAkademiPortfolio.Models.TblMessage>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h1 style="text-align: center;">Gelen Mesajlar</h1>
+<br />
+<table class="table table-striped table-bordered table-hover">
+
+    <tr>
+        <th>#</th>
+        <th>Gönderen Adı</th>
+        <th>Gönderen E-posta</th>
+        <th>Konu</th>
+        <th>Mesaj İçeriği</th>
+        <th>Durum</th>
+        <th>Durumu Güncelle</th>
+        <th>Sil</th>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+
+            <td>@item.MessageID</td>
+            <td>@item.SenderName</td>
+            <td>@item.SenderEmail</td>
+            <td>@item.Subject</td>
+            <td>@item.Detail</td>
+            <td>@item.Status</td>
+
+            @if (item.Status == "Okundu")
+            {
+                <td><a href="/Message/ReadToFalse/@item.MessageID" class="btn btn-primary">Okunmadı Olarak İşaretle</a></td>
+            }
+            else
+            {
+                <td><a href="/Message/ReadToTrue/@item.MessageID" class="btn btn-secondary">Okundu Olarak İşaretle</a></td>
+            }
+            <td><a href="/Message/DeleteMessage/@item.MessageID" class="btn btn-danger">Sil</a></td>
+
+
+        </tr>
+    }
+</table>

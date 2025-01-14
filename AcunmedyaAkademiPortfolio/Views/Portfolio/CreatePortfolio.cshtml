@@ -1,0 +1,30 @@
+﻿@model AcunmedyaAkademiPortfolio.Models.TblProject
+@{
+    ViewBag.Title = "CreatePortfolio";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Proje Ekleme </h2>
+
+<form method="post">
+
+    <label>Proje Adı</label>
+    @Html.TextBoxFor(x => x.ProjectTitle, new { @class = "form-control", @style = "border: groove" })
+    <br />
+
+    <label>Kategori</label>
+    @Html.DropDownListFor(x => x.CategoryID, (List<SelectListItem>)ViewBag.categories, "Seçiniz",
+        new { @class = "form-control", @style = "border: groove;" })
+    <br />
+
+    <label>Açıklama</label>
+    @Html.TextBoxFor(x => x.Description, new { @class = "form-control", @style = "border: groove" })
+    <br />
+
+    <label>Resim</label>
+    @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control", @style = "border: groove" })
+    <br />
+
+    <button type="submit" class="btn btn-primary">Ekle</button>
+
+</form>

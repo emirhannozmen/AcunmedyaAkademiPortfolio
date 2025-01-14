@@ -1,0 +1,25 @@
+﻿@model AcunmedyaAkademiPortfolio.Models.TblSkills
+@{
+    ViewBag.Title = "UpdateSkill";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Yetenek Güncelleme</h2>
+
+<form method="post">
+
+    <label>Kategori Id</label>
+    @Html.TextBoxFor(x => x.SkillID, new { @class = "form-control", @style = "border: groove", @readonly = "readonly" })
+    <br />
+
+    <label>Yetenek</label>
+    @Html.TextBoxFor(x => x.SkillTitle, new { @class = "form-control", @style = "border: groove" })
+    <br />
+
+    <label>Değer</label>
+    @Html.TextBoxFor(x => x.SkillValue, new { @class = "form-control", @style = "border: groove" })
+    <br />
+
+    <button class="btn btn-primary">Kaydet</button>
+
+</form>

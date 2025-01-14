@@ -1,0 +1,15 @@
+﻿@model List<AcunmedyaAkademiPortfolio.Models.TblProject>
+
+@foreach (var item in Model)
+{
+    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-@item.CategoryID">
+        <img src="@item.ImageUrl" class="img-fluid" alt="">
+        <div class="portfolio-info">
+
+            <h4>@item.ProjectTitle</h4>
+            <p>@item.Description</p>
+            <a href="@item.ImageUrl" title="@item.ProjectTitle" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+          
+        </div>
+    </div>
+}

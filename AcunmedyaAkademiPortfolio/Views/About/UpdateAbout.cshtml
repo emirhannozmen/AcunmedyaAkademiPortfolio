@@ -1,0 +1,56 @@
+﻿@model AcunmedyaAkademiPortfolio.Models.TblAbout
+@{
+    ViewBag.Title = "UpdateAbout";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Hakkımda Güncelleme</h2>
+
+<form method="post">
+
+    <label>Hakkımda Id</label>
+    @Html.TextBoxFor(x => x.AboutID, new { @class = "form-control", @style = "border: groove", @readonly = "readonly" })
+    <br />
+
+    <label>İsim</label>
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control", @style = "border: groove" })
+    <br />
+
+    <label>Açıklama</label>
+    @Html.TextBoxFor(x => x.Description, new { @class = "form-control", @style = "border: groove" })
+    <br />
+
+    <label>Yaş</label>
+    @Html.TextBoxFor(x => x.Age, new { @class = "form-control", @style = "border: groove" })
+    <br />
+
+    <label>E-posta</label>
+    @Html.TextBoxFor(x => x.Email, new { @class = "form-control", @style = "border: groove" })
+    <br />
+
+    <label>Doğum Tarihi</label>
+    @Html.TextBoxFor(x => x.Birthday, new { @class = "form-control", @style = "border: groove" })
+    <br />
+
+    <label>Şehir</label>
+    @Html.TextBoxFor(x => x.Location, new { @class = "form-control", @style = "border: groove" })
+    <br />
+
+    <label>Telefon</label>
+    @Html.TextBoxFor(x => x.Phone, new { @class = "form-control", @style = "border: groove" })
+    <br />
+
+    <label>Web Sitesi</label>
+    @Html.TextBoxFor(x => x.Website, new { @class = "form-control", @style = "border: groove" })
+    <br />
+
+    <label>Eğitim Derecesi</label>
+    @Html.TextBoxFor(x => x.Degree, new { @class = "form-control", @style = "border: groove" })
+    <br />
+
+    <label>Resim</label>
+    @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control", @style = "border: groove" })
+    <br />
+
+    <button class="btn btn-primary">Kaydet</button>
+</form>

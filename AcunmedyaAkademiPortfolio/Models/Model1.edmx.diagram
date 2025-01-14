@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3067ae04921345e69b43411858c2ddc2" Name="Diagram1" ZoomLevel="100">
+        <EntityTypeShape EntityType="DbAcunmedyaAkademi1Model.sysdiagrams" Width="1.5" PointX="8.5" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbAcunmedyaAkademi1Model.TblCategory" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbAcunmedyaAkademi1Model.TblProject" Width="1.5" PointX="2.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbAcunmedyaAkademi1Model.TblService" Width="1.5" PointX="6.5" PointY="1.375" IsExpanded="true" />
+        <AssociationConnector Association="DbAcunmedyaAkademi1Model.FK_TblProject_TblCategory" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DbAcunmedyaAkademi1Model.TblSocialMedia" Width="1.5" PointX="2.75" PointY="3.625" />
+        <EntityTypeShape EntityType="DbAcunmedyaAkademi1Model.TblAbout" Width="1.5" PointX="10.375" PointY="1.25" />
+        <EntityTypeShape EntityType="DbAcunmedyaAkademi1Model.TblMessage" Width="1.5" PointX="8.5" PointY="1.25" />
+        <EntityTypeShape EntityType="DbAcunmedyaAkademi1Model.TblSkills" Width="1.5" PointX="6.5" PointY="3.75" />
+        <EntityTypeShape EntityType="DbAcunmedyaAkademi1Model.TblTestimonial" Width="1.5" PointX="4.625" PointY="3.5" />
+        <EntityTypeShape EntityType="DbAcunmedyaAkademi1Model.TblEducation" Width="1.5" PointX="0.75" PointY="3.375" />
+        <EntityTypeShape EntityType="DbAcunmedyaAkademi1Model.TblExperience" Width="1.5" PointX="4.625" PointY="1.25" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

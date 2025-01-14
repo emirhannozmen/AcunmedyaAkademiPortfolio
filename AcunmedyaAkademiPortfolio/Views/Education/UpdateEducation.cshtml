@@ -1,0 +1,35 @@
+﻿@model AcunmedyaAkademiPortfolio.Models.TblEducation
+@{
+    ViewBag.Title = "UpdateEducation";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Eğitim Güncelleme</h2>
+
+<form method="post">
+
+    <label>Eğitim Id</label>
+    @Html.TextBoxFor(x => x.EducationID, new { @class = "form-control", @style = "border: groove", @readonly = "readonly" })
+    <br />
+
+    <label>Bölüm</label>
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control", @style = "border: groove" })
+    <br />
+
+    <label>Üniversite</label>
+    @Html.TextBoxFor(x => x.SubTitle, new { @class = "form-control", @style = "border: groove" })
+    <br />
+
+    <label>Eğitim</label>
+    @Html.TextAreaFor(x => x.Description, new { @class = "form-control", @style = "border: groove" })
+    <br />
+
+    <label>Dönem</label>
+    @Html.TextAreaFor(x => x.Period, new { @class = "form-control", @style = "border: groove" })
+    <br />
+
+
+
+    <button class="btn btn-primary">Kaydet</button>
+
+</form>

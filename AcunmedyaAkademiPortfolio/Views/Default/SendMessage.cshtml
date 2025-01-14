@@ -1,0 +1,40 @@
+﻿﻿@model AcunmedyaAkademiPortfolio.Models.TblMessage
+
+<div class="col-lg-8">
+
+  <form action="/Default/SendMessage" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+
+      <div class="row gy-4">
+
+          <div class="col-md-6">
+              <input type="text" name="SenderName" class="form-control" placeholder="Adınız" required="">
+          </div>
+
+          <div class="col-md-6 ">
+              <input type="email" class="form-control" name="SenderEmail" placeholder="E-Postanız" required="">
+          </div>
+
+          <div class="col-md-12">
+              <input type="text" class="form-control" name="Subject" placeholder="Konu" required="">
+          </div>
+
+          <div class="col-md-12">
+              <textarea class="form-control" name="Detail" rows="6" placeholder="Mesajınız" required=""></textarea>
+          </div>
+
+          <input type="hidden" id="status" name="status" value="Okunmadı">
+
+          <div class="col-md-12 text-center">
+
+              <div class="sent-message">Thank you!</div>
+              <div class="loading">Mesaj Gönderiliyor...</div>
+              <div class="error-message d-none"></div>
+
+              <button type="submit">Send Message</button>
+          </div>
+
+          
+      </div>
+  </form>
+
+</div>

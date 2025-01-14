@@ -1,0 +1,36 @@
+﻿@model List<AcunmedyaAkademiPortfolio.Models.TblExperience>
+
+<div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+
+    <h3 class="resume-title">Hakkımda</h3>
+
+    <div class="resume-item pb-0">
+        <h4>EMİRHAN ÖZMEN</h4>
+        <p>
+            <em>
+                Merhaba, ben Emirhan Özmen. Kendini sürekli geliştiren bir yazılım geliştirici olarak web ve mobil uygulama geliştirme, API entegrasyonları, veritabanı yönetimi gibi birçok alanda projeler geliştirdim.Teknolojik gelişmeleri takip ederek modern yazılım çözümleri üretmeye özen gösteriyorum. Öne çıkan projelerimle ilgili daha fazla detay için lütfen portföyümü inceleyin.
+            </em>
+        </p>
+        <ul>
+            <li>İstanbul, Türkiye</li>
+            <li>+90 505 366 3552</li>
+            <li>emirhannozmen@gmail.com</li>
+        </ul>
+    </div>
+
+    <h3 class="resume-title">Deneyim</h3>
+    @foreach (var item in Model)
+    {
+    <div class="resume-item">
+        <h4>@item.Title</h4>
+        <h5>@item.Period</h5>
+        <p><em>@item.SubTitle</em></p>
+        <ul>
+            <li>
+                @item.Description
+            </li>
+
+        </ul>
+    </div>
+    }
+</div>
